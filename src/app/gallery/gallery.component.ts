@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { Router } from '@angular/router';
 import { finalize, map, Observable } from 'rxjs';
 
 @Component({
@@ -12,7 +13,7 @@ export class GalleryComponent implements OnInit {
   images: string[] = [];
   error: string | null = null;
 
-  constructor(private storage: AngularFireStorage) {}
+  constructor(private storage: AngularFireStorage,private router:Router) {}
 
   ngOnInit() {
     this.fetchImages();
@@ -31,5 +32,10 @@ export class GalleryComponent implements OnInit {
     }, error => {
       this.error = error.message;
     });
+  }
+
+
+  back(){
+    this.router.navigate(['/upload']);
   }
 }

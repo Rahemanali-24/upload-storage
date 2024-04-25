@@ -1,10 +1,16 @@
+
+<div >
 <div *ngIf="error">
     <p>Error: {{ error }}</p>
   </div>
   
-  <div *ngIf="!error">
-    <div *ngFor="let imageUrl of images">
+  <div  *ngIf="!error">
+    <div class="show-file" *ngFor="let imageUrl of images">
       <img [src]="imageUrl" alt="Image" width="200">
+    
     </div>
+    
   </div>
-  
+
+ <button (click)="back()">Go Back</button>
+</div>
