@@ -1,0 +1,10 @@
+<div *ngIf="error">
+    <p>Error: {{ error }}</p>
+  </div>
+  
+  <div *ngIf="!error">
+    <div *ngFor="let imageUrl of images">
+      <img [src]="imageUrl" alt="Image" width="200">
+    </div>
+  </div>
+  
