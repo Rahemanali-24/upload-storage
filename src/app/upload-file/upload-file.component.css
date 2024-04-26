@@ -1,12 +1,16 @@
 html{
-    background-color: #2D3250;
-}   
+    background-color: #1d1022;
+} 
+
+label{
+    color: black;
+}
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2D3250;
+    background-color: #1d1022;
    
 }
 .img{
@@ -14,7 +18,7 @@ html{
     height: 548.5px;
 }
 .field{
-    background-color: #424769;
+    background-color: #BC7FCD;
     color: white;
     padding: 25px;
     
@@ -26,12 +30,12 @@ html{
 }
 
 h1{
-    color: white;
+    color: black;
     text-align: center;
     padding-top: 90px;
 }
 h2{
-    color: white;
+    color: black;
 }
 .form{
     display: flex;
@@ -43,7 +47,7 @@ h2{
     height: fit-content;
     width: fit-content;
     margin-top: 40px;
-    box-shadow: 11px 10px 15px -8px #d7d7d7;;
+    box-shadow: 11px 10px 15px -8px #da4bbb;;
 }
 .input_form{
     width: 280px;
@@ -54,33 +58,32 @@ h2{
 .transparent-input {
     background-color: transparent !important;
     border: none;
-    border: 1px solid #5d5d5d; /* Add a bottom border for better visibility */
+    border: 1px solid black; 
     border-radius: 2;
 }
 .transparent-input:focus {
-    border: 1px solid #F9B17A; /* Change the border color to yellow when input is focused */
+    border: 1px solid F9B17A; 
     box-shadow: none;
 }
 
 .rg_btn{
     width: 280px;
-    background-color: #F9B17A;
+    background-color: black;
     height: 40px;
     border: none;
     border-radius: 5px;
+    color: white;
 }
 .rg_btn:hover{
-    box-shadow: 2px 2px 2px #ffe7d4;
+    box-shadow: 2px 2px 2px #c2bebb;
 }
 
 @media screen and (max-width: 768px) {
-    /* Adjust form width */
     .form {
         flex-direction: column-reverse;
         width: 100%;
     }
 
-    /* Adjust input width */
     .input_form {
         width: calc(100% - 20px);
     }

@@ -1,10 +1,14 @@
+
 <div class="gallery-container">
+  <div>
+    <h1 class="gallery-ui" style="color: white; text-align: center; font-size: 30px;">Gallery</h1>
+  </div>
     <div *ngIf="error" class="error-message">
       <p>Error: {{ error }}</p>
     </div>
     
     <div *ngIf="!error" class="gallery">
-      <div class="image-container" *ngFor="let imageUrl of images">
+      <div style="width: 50px; height: 300px;" class="image-container" *ngFor="let imageUrl of images">
         <img [src]="imageUrl" alt="Image">
       </div>
     </div>
